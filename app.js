@@ -20,7 +20,8 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 // Creating a new database in MongoDB
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://admin-samim:Pyspark.2020@cluster0-pcwby.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true });
 
 //Create a new Schema
 const itemsSchema = {
